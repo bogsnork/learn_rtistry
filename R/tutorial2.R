@@ -71,6 +71,7 @@ for(i in seq_along(Planet_colors)){
 ## Naming the plots just to help keep track of what's going where====
 names(All_planets) <- names(Planet_colors)
 
+if(!dir.exists("planets")) dir.create("planets")
 
 # Saving Planets into the directory====
 for(i in seq_along(All_planets)){
